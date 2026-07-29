@@ -73,10 +73,10 @@ export default function AboutUs() {
     <section className="bg-white text-white">
 
       {/* Top Section */}
-      <div className="max-w-7xl mx-auto px-6 lg:px-10 py-20">
+      <div className="max-w-7xl mx-auto px-6 lg:px-10 py-30">
 
-        <div className="flex items-center gap-5 mb-12">
-  <h3 className="text-[#C9A227] courgette text-4xl italic font-serif">
+        <div className="flex items-center gap-3 mb-8 leading-6 ">
+  <h3 className="text-[#C9A227] courgette text-4xl ">
     About Us
   </h3>
 

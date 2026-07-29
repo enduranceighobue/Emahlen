@@ -1,10 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
 import MainLayout from "./layouts/MainLayout";
-
 import Home from "./pages/Home";
 import AboutPage from "./pages/AboutPage";
 import RoomsPage from "./pages/RoomsPage";
+import SingleRoomPage from "./pages/SingleRoomPage";
 import FacilitiesPage from "./pages/FacilitiesPage";
 import MediaPage from "./pages/MediaPage";
 import ContactPage from "./pages/ContactPage";
@@ -23,6 +22,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/rooms" element={<RoomsPage />} />
+          <Route path="/rooms/:id" element={<SingleRoomPage />} />
           <Route path="/facilities" element={<FacilitiesPage />} />
           <Route path="/media" element={<MediaPage />} />
           <Route path="/contact" element={<ContactPage />} />

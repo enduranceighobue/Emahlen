@@ -22,16 +22,13 @@ export default function RoomCard({ room }) {
                 <p className="mt-4 text-black manrope leading-8">
                     {room.description}
                 </p>
-                <a
-                    href="https://staging-hms.atslng.com/booking-app"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                <Link
+                    to={`/rooms/${room.id}`}
                     className="mt-8 inline-flex items-center gap-2 text-[#C8A44D] font-semibold hover:gap-4 transition-all"
-
                 >
                     View Room
                     <ArrowRight size={18} />
-                </a>
+                </Link>
 
             </div>
         </div>

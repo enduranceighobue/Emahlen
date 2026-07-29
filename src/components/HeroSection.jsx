@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
+import BookingSearch from "../components/Booking/BookingSearch";
 
 export function HeroSection() {
     return (
         <section
             id="home"
-            className="relative h-screen min-h-[850px] overflow-hidden"
+            className="relative h-screen min-h-[800px] overflow-visible "
         >
             {/* Background Image */}
             <div className="absolute inset-0">
@@ -55,9 +56,9 @@ export function HeroSection() {
 
                         <div className="flex flex-col gap-4 sm:flex-row">
                             <a
-                                 href="https://staging-hms.atslng.com/booking-app"
-                                 target="_blank"
-                        rel="noopener noreferrer"
+                                href="https://staging-hms.atslng.com/booking-app"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="px-8 py-3 rounded-lg  manrope text-white transition bg-[#C8A44D] hover:bg-[#ff9311] "
                             >
                                 Book a Room
@@ -73,6 +74,24 @@ export function HeroSection() {
                     </div>
                 </div>
             </div>
+           <div
+  className="
+    absolute
+    inset-x-0
+    bottom-[-70px]
+    left-[330px]
+    z-30
+    px-4
+    sm:px-6
+    lg:px-12
+    flex
+    justify-center
+  "
+>
+  <div className="w-full max-w-7xl md:block hidden">
+    <BookingSearch />
+  </div>
+</div>
         </section>
     );
 }

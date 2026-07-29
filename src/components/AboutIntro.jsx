@@ -1,7 +1,7 @@
 export default function AboutIntro() {
   return (
-    <section className="bg-white py-10 lg:py-14 ">
-      <div className="max-w-4xl mx-auto px-6 text-center">
+    <section className="bg-white py-10 lg:py-14   ">
+      <div className="max-w-4xl mx-auto px-6 text-center pt-20">
        
         <p className="text-[#101010] text-lg leading-7 opensans ">
           Emahlen Hotels and Suites was built on the belief that hospitality

@@ -50,10 +50,10 @@ export default function RestaurantSection() {
     to="/contact"
     className="inline-flex items-center justify-center
                border border-[#C8A44D]
-               bg-[#8d6b2d]/40 backdrop-blur-sm
+               bg-[#8d6b2d]/20 backdrop-blur-sm
                text-white
                px-6 sm:px-8 md:px-12 lg:px-20
-               py-3 md:py-4
+               py-2 md:py-3
                rounded-xl
                text-sm sm:text-base md:text-lg
                font-semibold

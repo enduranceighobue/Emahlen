@@ -41,14 +41,16 @@ export default function Header() {
             <div className="max-w-7xl mx-auto px-6 h-20 flex items-center">
                 {/* Left - Logo */}
                 <div className="flex-1">
-                    <Link to="/">
-                        <img
-                            src="/logo.png"
-                            alt="Emahlen Logo"
-                            className="h-15 w-auto mx-5"
-                        />
-                    </Link>
-                </div>
+  <Link to="/">
+    <div className="w-14 h-14 rounded-full overflow-hidden bg-black mx-5 flex items-center justify-center">
+      <img
+        src="/logo.png"
+        alt="Emahlen Logo"
+        className="w-full h-full object-cover"
+      />
+    </div>
+  </Link>
+</div>
 
                 {/* Center - Navigation */}
                 <div className="hidden lg:flex flex-1 justify-center items-center manrope space-x-10 font-medium text-sm">
