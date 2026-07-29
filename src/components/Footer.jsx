@@ -127,7 +127,7 @@ export default function Footer() {
                                     href="mailto:emahlensuitesawka@gmail.com"
                                     className="text-sm hover:text-[#C8A44D] transition"
                                 >
-                                    emahlensuitesawka@gmail.com
+                                    info@emahlensuites.com
                                 </a>
 
                             </div>
@@ -142,7 +142,7 @@ export default function Footer() {
                                 />
 
                                 <p className=" text-sm cursor-pointer hover:text-[#C8A44D]">
-                                    Awka, Anambra State
+                                    Before fun city junction, Kwata, Awka, Anambra state, Nigeria.
                                 </p>
 
                             </div>

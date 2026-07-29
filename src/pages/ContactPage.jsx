@@ -67,8 +67,7 @@ export default function ContactPage() {
                                     />
 
                                     <p className="text-xl font-medium">
-                                        125 Elganza street,
-                                        Lekki Lagos
+                                        Before fun city junction, Kwata, Awka, Anambra state, Nigeria.
                                     </p>
                                 </div>
 
@@ -79,7 +78,7 @@ export default function ContactPage() {
                                     />
 
                                     <p className="text-xl font-medium">
-                                        +234 567 890 2132
+                                        +234 707 444 1664
                                     </p>
                                 </div>
 
@@ -90,7 +89,7 @@ export default function ContactPage() {
                                     />
 
                                     <p className=" text-sm md:text-[20px] font-medium">
-                                        contact@emahlenhotels.com
+                                        info@emahlensuites.com
                                     </p>
                                 </div>
 
