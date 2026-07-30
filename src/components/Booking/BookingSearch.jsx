@@ -44,7 +44,7 @@ export default function BookingSearch() {
       shadow-[0_0_30px_rgba(200,164,77,0.18)]
       p-5
       w-full
-      max-w-2xl mb-5
+      max-w-xl mb-5
       "
         >
             <form
@@ -157,8 +157,8 @@ export default function BookingSearch() {
 
                 <button
                     type="submit"
-                    className=" mb-2
-                    h-[37px]
+                    className=" mb-3
+                    h-[33px]
                     rounded-xl
                     bg-[#C8A44D]
                     hover:bg-[#b18d3a]
@@ -167,7 +167,7 @@ export default function BookingSearch() {
                     font-medium
                     py-2
                     px-2
-                    text-[15px]
+                    text-[10px]
                 "
                 >
                     Check Availability
