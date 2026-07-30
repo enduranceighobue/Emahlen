@@ -20,7 +20,7 @@ export function HeroSection() {
             <div className="absolute inset-0 bg-black/30"></div>
 
             {/* Content */}
-            <div className="relative z-10 h-full flex items-center">
+            <div className="relative z-10 h-full flex items-center mt-18">
                 <div className="max-w-7xl mx-auto px-6 lg:px-12 w-full -translate-y-10">
                     <div className="flex flex-col gap-4 max-w-2xl ">
                         <span
@@ -30,7 +30,7 @@ export function HeroSection() {
                 rounded-full
                 text-[12px] sm:text-xs md:text-sm
                 text-[#C8A44D]
-                manrope px-2
+                manrope px-2 mt-3
                 w-fit
               "
                         >
