@@ -6,13 +6,14 @@ import {
   ChevronDown,
 } from "lucide-react";
 
+import { toast } from "sonner";
+
 export default function RoomBookingCard({ room }) {
 
   const [checkIn, setCheckIn] = useState("");
   const [checkOut, setCheckOut] = useState("");
   const [guests, setGuests] = useState("");
   const [selectedRoom, setSelectedRoom] = useState(room?.name || "");
-  const [rooms, setRooms] = useState([room]);
 
 
   const checkInRef = useRef(null);
@@ -21,8 +22,8 @@ export default function RoomBookingCard({ room }) {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!checkIn || !checkOut || !selectedRoom) {
-      alert("Please select check-in, check-out and room.");
+    if (!checkIn || !checkOut || !guests || !selectedRoom) {
+      toast.error("Please complete all booking details.");
       return;
     }
 
