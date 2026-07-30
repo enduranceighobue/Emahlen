@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export function ContactHero() {
   return (
-    <section className="relative min-h-[550px] overflow-hidden">
+    <section className="relative min-h-[250px] overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
         <img

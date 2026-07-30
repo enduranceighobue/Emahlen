@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export function FacilitiesHero() {
   return (
-    <section className="relative  min-h-[600px] overflow-hidden">
+    <section className="relative  min-h-[300px] overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
@@ -16,8 +16,8 @@ export function FacilitiesHero() {
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/30 to-transparent backdrop-blur-[2px]" />
 
       {/* Content */}
-      <div className="relative z-10 flex items-center mt-70 justify-center h-full px-6">
-        <div className="max-w-3xl text-center text-white ">
+      <div className="relative z-10 flex items-center mt-50 justify-center h-full px-6">
+        <div className="max-w-3xl text-center text-white mb-25 ">
           <h2 className="text-3xl md:text-3xl lg:text-4xl playfair font-bold leading-tight ">
             Thoughtfully Designed for Your Comfort
           </h2>

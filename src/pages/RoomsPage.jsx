@@ -10,11 +10,13 @@ export default function RoomsPage() {
 
       <div className="mx-auto max-w-7xl px-6">
 
-        <h1 className="cormorant text-center text-5xl text-white mb-16">
-          Our Rooms
+        <h1 className="playfair text-center text-4xl font-semibold text-black mb-15 ">
+          Where Comfort Meets Class: Explore Our Exquisite Rooms
         </h1>
 
-        <div className="grid gap-10 md:grid-cols-2 xl:grid-cols-3">
+       
+
+        <div className="grid gap-10 md:grid-cols-2 xl:grid-cols-3  ">
 
           {rooms.map((room) => (
             <RoomCard
@@ -24,6 +26,7 @@ export default function RoomsPage() {
           ))}
 
         </div>
+        
 
       </div>
 

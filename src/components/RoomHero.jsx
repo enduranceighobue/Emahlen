@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export function RoomHero() {
     return (
-        <section className="relative min-h-[400px] overflow-hidden">
+        <section className="relative min-h-[300px] overflow-hidden">
             {/* Background Image */}
             <div className="absolute inset-0">
                 <img
@@ -16,15 +16,8 @@ export function RoomHero() {
             <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/30 to-transparent backdrop-blur-[2px]" />
 
             {/* Content */}
-            <div className="relative z-10 mt-43 flex items-center justify-center h-full px-6">
-                <div className="max-w-3xl text-center text-white">
-                    <h2 className="text-4xl md:text-4xl lg:text-5xl playfair font-bold leading-tight ">
-                        Where Comfort Meets
-                        Class
-                    </h2>
-
-                   
-                </div>
+            <div className="relative z-10 mt-35 flex items-center justify-center h-full px-6">
+                
             </div>
         </section>
     );

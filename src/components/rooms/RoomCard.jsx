@@ -9,7 +9,7 @@ export default function RoomCard({ room }) {
                 <img
                     src={room.image}
                     alt={room.name}
-                    className="h-72 w-full object-cover transition duration-500 group-hover:scale-105"
+                    className="h-72 w-full p-6 rounded-lg object-cover transition duration-500 group-hover:scale-105"
                 />
             </div>
 
@@ -24,7 +24,7 @@ export default function RoomCard({ room }) {
                 </p>
                 <Link
                     to={`/rooms/${room.id}`}
-                    className="mt-8 inline-flex items-center gap-2 text-[#C8A44D] font-semibold hover:gap-4 transition-all"
+                    className="mt-8 inline-flex items-center mx-20 gap-2 text-[#C8A44D] font-semibold hover:gap-4 transition-all"
                 >
                     View Room
                     <ArrowRight size={18} />
