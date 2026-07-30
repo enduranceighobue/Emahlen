@@ -79,7 +79,7 @@ export function HeroSection() {
     absolute
     inset-x-0
     bottom-[-70px]
-    left-[310px]
+    left-[70px]
     z-30
     px-4
     sm:px-6

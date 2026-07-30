@@ -42,17 +42,17 @@ export default function BookingSearch() {
       rounded-2xl
       border border-[#C8A44D]
       shadow-[0_0_30px_rgba(200,164,77,0.18)]
-      p-5
-      w-full
-      max-w-xl mb-5
+      
+      
+      max-w-5xl mb-7
       "
         >
             <form
                 onSubmit={handleSubmit}
-                className="grid grid-cols-1 md:grid-cols-4 gap-5 items-end"
+                className="grid grid-cols-1 md:grid-cols-4 gap-5 p-4  items-end"
             >
                 {/* Check In */}
-                <div className="border border-[#C8A44D] px-2 py-1 rounded-md">
+                <div className="border border-[#C8A44D] px-2 py-1 p-3 rounded-md">
                     <p className="text-gray-400 text-sm mb-2">
                         Check - In
                     </p>
@@ -75,7 +75,7 @@ export default function BookingSearch() {
                             type="date"
                             value={checkIn}
                             onChange={(e) => setCheckIn(e.target.value)}
-                            className="absolute opacity-0 pointer-events-none"
+                            className="absolute opacity-0 pointer-events-none "
                         />
                     </div>
                 </div>
@@ -158,7 +158,7 @@ export default function BookingSearch() {
                 <button
                     type="submit"
                     className=" mb-3
-                    h-[33px]
+                    h-[37px]
                     rounded-xl
                     bg-[#C8A44D]
                     hover:bg-[#b18d3a]
@@ -166,7 +166,7 @@ export default function BookingSearch() {
                     text-white
                     font-medium
                     py-2
-                    px-2
+                    px-3
                     text-[10px]
                 "
                 >
