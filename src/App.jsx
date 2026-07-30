@@ -8,6 +8,7 @@ import FacilitiesPage from "./pages/FacilitiesPage";
 import MediaPage from "./pages/MediaPage";
 import ContactPage from "./pages/ContactPage";
 import ScrollToTop from "./components/ScrollToTop";
+import CareerPage from "./pages/CareerPage";
 
 
 import "./App.css";
@@ -26,6 +27,7 @@ function App() {
           <Route path="/facilities" element={<FacilitiesPage />} />
           <Route path="/media" element={<MediaPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/careers" element={<CareerPage />} />
 
         </Route>
       </Routes>

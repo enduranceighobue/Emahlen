@@ -77,14 +77,12 @@ export default function Footer() {
                                 </Link>
                             </li>
                             <li>
-                                <a
-                                    href="https://hr-payrol-software-frontend.onrender.com/auth/login"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
+                                <Link
+                                    to="/careers"
                                     className="hover:text-[#C8A44D] playfair transition"
                                 >
-                                    Career
-                                </a>
+                                    Careers
+                                </Link>
                             </li>
                         </ul>
 
