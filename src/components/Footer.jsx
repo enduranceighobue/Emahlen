@@ -11,7 +11,7 @@ import {
 
 export default function Footer() {
     return (
-        <footer className="bg-black text-white mt-25 ">
+        <footer className="bg-black text-white  ">
 
             <div className="max-w-7xl mx-auto px-6 lg:px-10 py-20">
 
@@ -35,11 +35,11 @@ export default function Footer() {
 
                     <div>
 
-                        <h3 className="text-[#C8A44D] text-xl opensans font-semibold mb-6">
+                        <h3 className="text-[#C8A44D] text-xl opensans font-semibold mb-3">
                             QUICK LINKS
                         </h3>
 
-                        <ul className="space-y-3 opensans text-sm ">
+                        <ul className="space-y-2 opensans text-sm ">
 
                             <li>
                                 <Link
@@ -94,11 +94,11 @@ export default function Footer() {
 
                     <div>
 
-                        <h3 className="text-[#C8A44D] opensans text-xl font-semibold mb-5">
+                        <h3 className="text-[#C8A44D] opensans text-xl font-semibold mb-3">
                             Contact Information
                         </h3>
 
-                        <div className="space-y-4 opensans">
+                        <div className="space-y-2 opensans">
 
                             <div className="flex items-start  gap-4">
 
@@ -155,7 +155,7 @@ export default function Footer() {
 
                     <div>
 
-                        <h3 className="text-[#C8A44D] text-xl font-semibold mb-8">
+                        <h3 className="text-[#C8A44D] text-xl font-semibold mb-3">
                             Follow Us
                         </h3>
 
@@ -217,7 +217,7 @@ export default function Footer() {
 
                 {/* Bottom */}
 
-                <div className="mt-24 text-center">
+                <div className="mt-7 text-center">
 
                     <p className="text-[#C8A44D] ">
                         © Copyrights reserved by Emahlen Hotels
