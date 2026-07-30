@@ -16,8 +16,8 @@ export function ContactHero() {
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/30 to-transparent backdrop-blur-[2px]" />
 
       {/* Content */}
-      <div className="relative z-10 mt-58 flex items-center justify-center h-full px-6">
-        <div className="max-w-3xl text-center text-white">
+      <div className="relative z-10 mt-40 flex items-center justify-center h-full px-6">
+        <div className="max-w-3xl text-center mb-24 text-white">
           <h2 className="text-4xl md:text-4xl lg:text-5xl playfair font-bold leading-tight ">
             Get in Touch with Us
           </h2>

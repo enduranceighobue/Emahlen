@@ -66,7 +66,7 @@ export default function ContactPage() {
                                         size={26}
                                     />
 
-                                    <p className="text-xl font-medium">
+                                    <p className="text-xl font-medium text-black">
                                         Before fun city junction, Kwata, Awka, Anambra state, Nigeria.
                                     </p>
                                 </div>
@@ -77,7 +77,7 @@ export default function ContactPage() {
                                         size={26}
                                     />
 
-                                    <p className="text-xl font-medium">
+                                    <p className="text-xl font-medium text-black ">
                                         +234 707 444 1664
                                     </p>
                                 </div>
@@ -88,14 +88,14 @@ export default function ContactPage() {
                                         size={26}
                                     />
 
-                                    <p className=" text-sm md:text-[20px] font-medium">
+                                    <p className=" text-sm md:text-[20px] font-medium text-black">
                                         info@emahlensuites.com
                                     </p>
                                 </div>
 
                             </div>
 
-                            <h3 className="playfair text-[30px] font-bold mt-14">
+                            <h3 className="playfair text-[30px] font-bold mt-14 text-black">
                                 Follow Us
                             </h3>
 
@@ -132,7 +132,7 @@ export default function ContactPage() {
                                 >
                                     <FaXTwitter
                                         size={30}
-                                        className="hover:text-[#C8A44D] transition"
+                                        className="hover:text-[#C8A44D] text-black transition"
                                     />
                                 </a>
 
@@ -157,7 +157,7 @@ export default function ContactPage() {
                                     type="text"
                                     placeholder="Full Name"
                                     required
-                                    className="w-full h-20 rounded-3xl border border-[#C8A44D] bg-[#ECECEC] px-6"
+                                    className="w-full h-20 rounded-3xl border border-[#C8A44D] text-black bg-[#ECECEC] px-6"
                                 />
 
                                 <div className="grid md:grid-cols-2 gap-6">
@@ -166,14 +166,14 @@ export default function ContactPage() {
                                         type="email"
                                         placeholder="Email Address"
                                         required
-                                        className="h-20 rounded-3xl border border-[#C8A44D] bg-[#ECECEC] px-6"
+                                        className="h-20 rounded-3xl border text-black border-[#C8A44D] bg-[#ECECEC] px-6"
                                     />
 
                                     <input
                                         name="phone"
                                         type="text"
                                         placeholder="Phone Number"
-                                        className="h-20 rounded-3xl border border-[#C8A44D] bg-[#ECECEC] px-6"
+                                        className="h-20 rounded-3xl border text-black border-[#C8A44D] bg-[#ECECEC] px-6"
                                     />
                                 </div>
 
@@ -182,7 +182,7 @@ export default function ContactPage() {
                                     placeholder="Message"
                                     required
                                     rows={6}
-                                    className="w-full rounded-3xl border border-[#C8A44D] bg-[#ECECEC] px-6 py-5 resize-none"
+                                    className="w-full rounded-3xl border text-black border-[#C8A44D] bg-[#ECECEC] px-6 py-5 resize-none"
                                 />
 
                                 <button
