@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import {
   CalendarDays,
   Users,
@@ -7,13 +7,43 @@ import {
 } from "lucide-react";
 
 export default function RoomBookingCard({ room }) {
+
   const [checkIn, setCheckIn] = useState("");
   const [checkOut, setCheckOut] = useState("");
   const [guests, setGuests] = useState("");
   const [selectedRoom, setSelectedRoom] = useState(room?.name || "");
+  const [rooms, setRooms] = useState([room]);
+
+
+  const checkInRef = useRef(null);
+  const checkOutRef = useRef(null);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (!checkIn || !checkOut || !selectedRoom) {
+      alert("Please select check-in, check-out and room.");
+      return;
+    }
+
+    window.open(
+      "https://staging-hms.atslng.com/booking-app",
+      "_blank",
+      "noopener,noreferrer"
+    );
+
+    // Reset form
+    setCheckIn("");
+    setCheckOut("");
+    setGuests("");
+    setSelectedRoom("");
+  };
 
   return (
-    <div className="w-full max-w-[420px] bg-black border border-[#C8A44D] rounded-[22px] p-8 shadow-xl">
+    <form
+      onSubmit={handleSubmit}
+      className="w-full max-w-[420px] bg-black border border-[#C8A44D] rounded-[22px] p-8 shadow-xl"
+    >
       {/* Heading */}
       <h2 className="text-white text-[30px] font-serif ">
         Book Your Stay
@@ -25,18 +55,25 @@ export default function RoomBookingCard({ room }) {
           Check - In
         </label>
 
-        <div className="flex items-center border border-[#C8A44D] rounded-md h-10 px-4">
+        <div
+          onClick={() => checkInRef.current?.showPicker()}
+          className="flex items-center border border-[#C8A44D] rounded-md h-10 px-4 cursor-pointer"
+        >
           <CalendarDays
             size={18}
             className="text-[#C8A44D] mr-3 flex-shrink-0"
           />
- 
+
+          <span className="text-white text-sm">
+            {checkIn || "Enter Date"}
+          </span>
+
           <input
+            ref={checkInRef}
             type="date"
             value={checkIn}
             onChange={(e) => setCheckIn(e.target.value)}
-            className="bg-transparent w-full outline-none text-white
-            [color-scheme:dark]"
+            className="absolute opacity-0 pointer-events-none"
           />
         </div>
       </div>
@@ -47,18 +84,25 @@ export default function RoomBookingCard({ room }) {
           Check - Out
         </label>
 
-        <div className="flex items-center border border-[#C8A44D] rounded-md h-10 px-4">
+        <div
+          onClick={() => checkOutRef.current?.showPicker()}
+          className="flex items-center border border-[#C8A44D] rounded-md h-10 px-4 cursor-pointer"
+        >
           <CalendarDays
             size={18}
             className="text-[#C8A44D] mr-3 flex-shrink-0"
           />
 
+          <span className="text-white text-sm">
+            {checkOut || "Enter Date"}
+          </span>
+
           <input
+            ref={checkOutRef}
             type="date"
             value={checkOut}
             onChange={(e) => setCheckOut(e.target.value)}
-            className="bg-transparent w-full outline-none text-white
-            [color-scheme:dark]"
+            className="absolute opacity-0 pointer-events-none"
           />
         </div>
       </div>
@@ -79,27 +123,38 @@ export default function RoomBookingCard({ room }) {
             value={guests}
             onChange={(e) => setGuests(e.target.value)}
             className="
-              w-full
-              h-10
-              bg-transparent
-              border
-              border-[#C8A44D]
-              rounded-md
-              pl-12
-              pr-12
-              text-white
-              appearance-none
-              outline-none
-            "
+        w-full
+        h-10
+        bg-transparent
+        border
+        border-[#C8A44D]
+        rounded-md
+        pl-12
+        pr-12
+        text-white
+        appearance-none
+        outline-none
+      "
           >
-            <option value="" className="text-black h-10">
-              Select number of guests
+            <option value="" className="text-black">
+              Select Guests
             </option>
 
-            <option className="text-black">1 Guest</option>
-            <option className="text-black">2 Guests</option>
-            <option className="text-black">3 Guests</option>
-            <option className="text-black">4 Guests</option>
+            <option value="1 Guest" className="text-black">
+              1 Guest
+            </option>
+
+            <option value="2 Guests" className="text-black">
+              2 Guests
+            </option>
+
+            <option value="3 Guests" className="text-black">
+              3 Guests
+            </option>
+
+            <option value="4 Guests" className="text-black">
+              4 Guests
+            </option>
           </select>
 
           <ChevronDown
@@ -109,13 +164,12 @@ export default function RoomBookingCard({ room }) {
         </div>
       </div>
 
-      {/* Room */}
       <div className="mb-6">
         <label className="block text-[#8A8A8A] text-sm mb-1">
-          Rooms
+          Room
         </label>
 
-        <div className="relative">
+        <div className="relative h-10">
           <BedDouble
             size={18}
             className="absolute left-4 top-1/2 -translate-y-1/2 text-[#C8A44D]"
@@ -125,36 +179,40 @@ export default function RoomBookingCard({ room }) {
             value={selectedRoom}
             onChange={(e) => setSelectedRoom(e.target.value)}
             className="
-              w-full
-              h-10
-              bg-transparent
-              border
-              border-[#C8A44D]
-              rounded-md
-              pl-12
-              pr-12
-              text-black
-              appearance-none
-              outline-none
-            "
+    w-full
+    h-10
+    bg-transparent
+    border
+    border-[#C8A44D]
+    rounded-md
+    pl-12
+    pr-12
+    text-white
+    appearance-none
+    outline-none
+  "
           >
-            <option className="text-black">
+            <option value="" className="text-black">
+              Select Room
+            </option>
+
+            <option value="Presidential Suite" className="text-black">
               Presidential Suite
             </option>
 
-            <option className="text-black">
+            <option value="Executive Room" className="text-black">
               Executive Room
             </option>
 
-            <option className="text-black">
+            <option value="Junior Room" className="text-black">
               Junior Room
             </option>
 
-            <option className="text-black">
+            <option value="Standard Room" className="text-black">
               Standard Room
             </option>
 
-            <option className="text-black">
+            <option value="Luxury Deluxe Room" className="text-black">
               Luxury Deluxe Room
             </option>
           </select>
@@ -167,7 +225,7 @@ export default function RoomBookingCard({ room }) {
       </div>
 
       {/* Button */}
-      <button
+      <button type="submit"
         className="
           w-full
           h-10
@@ -182,6 +240,6 @@ export default function RoomBookingCard({ room }) {
       >
         Book Now
       </button>
-    </div>
+    </form>
   );
 }
