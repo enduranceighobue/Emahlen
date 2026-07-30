@@ -59,14 +59,14 @@ export function HeroSection() {
                                 href="https://staging-hms.atslng.com/booking-app"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="px-8 py-3 rounded-lg  manrope text-white transition bg-[#C8A44D] hover:bg-[#ff9311] "
+                                className="px-8 py-2 rounded-lg  playfair text-white transition bg-[#C8A44D] hover:bg-[#ff9311] "
                             >
                                 Book a Room
                             </a>
 
                             <Link to="/rooms"
 
-                                className="px-8 py-3 rounded-lg manrope  text-[#C8A44D] transition border border-[#C8A44D] hover:bg-white hover:text-black dm-sans"
+                                className="px-8 py-2 rounded-lg playfair  text-[#C8A44D] transition border border-[#C8A44D] hover:bg-white hover:text-black dm-sans"
                             >
                                 Explore Our Rooms
                             </Link>

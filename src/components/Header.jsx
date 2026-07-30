@@ -53,7 +53,7 @@ export default function Header() {
 </div>
 
                 {/* Center - Navigation */}
-                <div className="hidden lg:flex flex-1 justify-center items-center manrope space-x-10 font-medium text-sm">
+                <div className="hidden lg:flex flex-1 justify-center items-center playfair space-x-10 font-medium text-sm">
                     <NavLink
                         to="/"
                         className={({ isActive }) =>
@@ -126,7 +126,7 @@ export default function Header() {
                         href="https://staging-hms.atslng.com/booking-app"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="border border-[#C8A44D] text-[#C8A44D] manrope px-5 py-2 rounded-lg hover:bg-[#C8A44D] hover:text-white transition"
+                        className="border border-[#C8A44D] text-[#C8A44D] playfair px-5 py-1 rounded-lg hover:bg-[#C8A44D] hover:text-white transition"
 
                     >
                         Book Now
@@ -144,10 +144,10 @@ export default function Header() {
 
             {/* Mobile Menu */}
             <div
-                className={`lg:hidden absolute top-20 left-0 w-full bg-[#000000] transition-all duration-300 overflow-hidden ${isOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+                className={`lg:hidden absolute top-20 left-0 w-full bg-[#000000] playfair transition-all duration-300 overflow-hidden ${isOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
                     }`}
             >
-                <div className="flex flex-col py-6 manrope">
+                <div className="flex flex-col py-6 playfair text-sm font-medium">
                     <Link
                         to="/"
                         onClick={closeMenu}
@@ -200,7 +200,7 @@ export default function Header() {
                         <Link
                             to="/booking"
                             onClick={closeMenu}
-                            className="block text-center border border-[#C8A44D] text-[#C8A44D] py-3 rounded-md hover:bg-[#C8A44D] hover:text-white transition"
+                            className="block text-center border playfair border-[#C8A44D] text-[#C8A44D] py-3 rounded-md hover:bg-[#C8A44D] hover:text-white transition"
                         >
                             Book Now
                         </Link>

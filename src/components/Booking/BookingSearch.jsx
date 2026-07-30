@@ -1,5 +1,6 @@
 import { CalendarDays, BedDouble } from "lucide-react";
 import { useState, useRef } from "react";
+import { toast } from "sonner";
 
 export default function BookingSearch() {
 
@@ -18,7 +19,7 @@ export default function BookingSearch() {
 
         // Optional validation
         if (!checkIn || !checkOut || !room) {
-            alert("Please select check-in, check-out and room.");
+                  toast.error("Please complete all booking details.");
             return;
         }
 

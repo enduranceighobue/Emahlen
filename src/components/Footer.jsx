@@ -11,11 +11,11 @@ import {
 
 export default function Footer() {
     return (
-        <footer className="bg-black text-white  ">
+        <footer className="bg-black text-white playfair ">
 
-            <div className="max-w-7xl mx-auto px-6 lg:px-10 py-20">
+            <div className="max-w-7xl mx-auto px-6 lg:px-10 py-20 playfair">
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-16">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 playfair gap-16">
 
                     {/* Logo */}
 
@@ -35,16 +35,16 @@ export default function Footer() {
 
                     <div>
 
-                        <h3 className="text-[#C8A44D] text-xl opensans font-semibold mb-3">
+                        <h3 className="text-[#C8A44D] text-xl playfair font-semibold mb-3">
                             QUICK LINKS
                         </h3>
 
-                        <ul className="space-y-2 opensans text-sm ">
+                        <ul className="space-y-2 playfair text-sm ">
 
                             <li>
                                 <Link
                                     to="/"
-                                    className="hover:text-[#C8A44D] transition"
+                                    className="hover:text-[#C8A44D] playfair transition"
                                 >
                                     Home
                                 </Link>
@@ -53,7 +53,7 @@ export default function Footer() {
                             <li>
                                 <Link
                                     to="/about"
-                                    className="hover:text-[#C8A44D] transition"
+                                    className="hover:text-[#C8A44D] playfair transition"
                                 >
                                     About Us
                                 </Link>
@@ -62,7 +62,7 @@ export default function Footer() {
                             <li>
                                 <Link
                                     to="/contact"
-                                    className="hover:text-[#C8A44D] transition"
+                                    className="hover:text-[#C8A44D] playfair transition"
                                 >
                                     Contact Us
                                 </Link>
@@ -71,7 +71,7 @@ export default function Footer() {
                             <li>
                                 <Link
                                     to="/facilities"
-                                    className="hover:text-[#C8A44D] transition"
+                                    className="hover:text-[#C8A44D] playfair transition"
                                 >
                                     Facilities
                                 </Link>
@@ -81,7 +81,7 @@ export default function Footer() {
                                     href="https://hr-payrol-software-frontend.onrender.com/auth/login"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="hover:text-[#C8A44D] transition"
+                                    className="hover:text-[#C8A44D] playfair transition"
                                 >
                                     Career
                                 </a>
@@ -94,11 +94,11 @@ export default function Footer() {
 
                     <div>
 
-                        <h3 className="text-[#C8A44D] opensans text-xl font-semibold mb-3">
+                        <h3 className="text-[#C8A44D] playfair text-xl font-semibold mb-3">
                             Contact Information
                         </h3>
 
-                        <div className="space-y-2 opensans">
+                        <div className="space-y-2 playfair">
 
                             <div className="flex items-start  gap-4">
 
@@ -109,7 +109,7 @@ export default function Footer() {
 
                                 <a
                                     href="tel:+2347074441664"
-                                    className="hover:text-[#C8A44D] transition cursor-pointer"
+                                    className="hover:text-[#C8A44D] playfair transition cursor-pointer"
                                 >
                                     +234 707 444 1664
                                 </a>
@@ -125,7 +125,7 @@ export default function Footer() {
 
                                 <a
                                     href="mailto:emahlensuitesawka@gmail.com"
-                                    className="text-sm hover:text-[#C8A44D] transition"
+                                    className="text-sm hover:text-[#C8A44D] playfair transition"
                                 >
                                     info@emahlensuites.com
                                 </a>
@@ -141,8 +141,8 @@ export default function Footer() {
                                     className="text-[#C8A44D] mt-1 cursor-pointer "
                                 />
 
-                                <p className=" text-sm cursor-pointer hover:text-[#C8A44D]">
-                                    Before fun city junction, Kwata, Awka, Anambra state, Nigeria.
+                                <p className=" text-sm cursor-pointer hover:text-[#C8A44D] playfair">
+                                    Awka, Anambra state, Nigeria.
                                 </p>
 
                             </div>
@@ -155,7 +155,7 @@ export default function Footer() {
 
                     <div>
 
-                        <h3 className="text-[#C8A44D] text-xl font-semibold mb-3">
+                        <h3 className="text-[#C8A44D] playfair text-xl font-semibold mb-3">
                             Follow Us
                         </h3>
 
@@ -219,7 +219,7 @@ export default function Footer() {
 
                 <div className="mt-7 text-center">
 
-                    <p className="text-[#C8A44D] ">
+                    <p className="text-[#C8A44D] playfair ">
                         © Copyrights reserved by Emahlen Hotels
                     </p>
 
