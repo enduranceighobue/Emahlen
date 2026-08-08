@@ -274,6 +274,22 @@ export default function CareerManagement() {
     }
   };
 
+  useEffect(() => {
+  const unsubscribe = onAuthStateChanged(auth, (user) => {
+    console.log("CURRENT USER:", user);
+
+    if (!user) {
+      navigate("/career-login");
+      return;
+    }
+
+    console.log("USER EMAIL:", user.email);
+    console.log("USER UID:", user.uid);
+  });
+
+  return () => unsubscribe();
+}, [navigate]);
+
   // ==================================================
   // STATS
   // ==================================================
