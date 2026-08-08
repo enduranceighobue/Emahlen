@@ -36,7 +36,7 @@ export default function CareerManagement() {
 
   const [showAddJob, setShowAddJob] = useState(false);
 
-  const ADMIN_UID = "bsIndQhSVpd0Tz9INQ0RVaDGq1Y2";
+  // const ADMIN_UID = "bsIndQhSVpd0Tz9INQ0RVaDGq1Y2";
 
  const [form, setForm] = useState({
   title: "",
@@ -54,15 +54,26 @@ export default function CareerManagement() {
   // AUTH CHECK
   // ==================================================
 
-  useEffect(() => {
+//   useEffect(() => {
+//   const unsubscribe = onAuthStateChanged(auth, (user) => {
+//     if (!user) {
+//       navigate("/career-login");
+//       return;
+//     }
+
+//     if (user.uid !== ADMIN_UID) {
+//       navigate("/career");
+//     }
+//   });
+
+//   return () => unsubscribe();
+// }, [navigate]);
+
+
+useEffect(() => {
   const unsubscribe = onAuthStateChanged(auth, (user) => {
     if (!user) {
       navigate("/career-login");
-      return;
-    }
-
-    if (user.uid !== ADMIN_UID) {
-      navigate("/career");
     }
   });
 
@@ -274,21 +285,21 @@ export default function CareerManagement() {
     }
   };
 
-  useEffect(() => {
-  const unsubscribe = onAuthStateChanged(auth, (user) => {
-    console.log("CURRENT USER:", user);
+//   useEffect(() => {
+//   const unsubscribe = onAuthStateChanged(auth, (user) => {
+//     console.log("CURRENT USER:", user);
 
-    if (!user) {
-      navigate("/career-login");
-      return;
-    }
+//     if (!user) {
+//       navigate("/career-login");
+//       return;
+//     }
 
-    console.log("USER EMAIL:", user.email);
-    console.log("USER UID:", user.uid);
-  });
+//     console.log("USER EMAIL:", user.email);
+//     console.log("USER UID:", user.uid);
+//   });
 
-  return () => unsubscribe();
-}, [navigate]);
+//   return () => unsubscribe();
+// }, [navigate]);
 
   // ==================================================
   // STATS
