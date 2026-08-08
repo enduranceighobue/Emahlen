@@ -78,8 +78,8 @@ export function HeroSection() {
   className="
     absolute
     inset-x-0
-    bottom-[-70px]
-    left-[70px]
+    bottom-[-80px]
+    left-[100px]
     z-30
     px-4
     sm:px-6

@@ -48,7 +48,7 @@ export default function ContactPage() {
 
                         <div className="bg-[#F8F0DE] rounded-[28px] p-8">
 
-                            <h2 className="playfair text-[40px] font-bold text-[#1E1E1E]">
+                            <h2 className="playfair text-[30px] font-bold text-[#1E1E1E]">
                                 Emahlen Hotels
                             </h2>
 
@@ -63,10 +63,10 @@ export default function ContactPage() {
                                 <div className="flex items-center gap-4">
                                     <MapPin
                                         className="text-[#C8A44D]"
-                                        size={26}
+                                        size={20}
                                     />
 
-                                    <p className="text-xl font-medium text-black">
+                                    <p className="text-[18px] font-medium text-black">
                                         Before fun city junction, Kwata, Awka, Anambra state, Nigeria.
                                     </p>
                                 </div>
@@ -74,10 +74,10 @@ export default function ContactPage() {
                                 <div className="flex items-center gap-4">
                                     <Phone
                                         className="text-[#C8A44D]"
-                                        size={26}
+                                        size={20}
                                     />
 
-                                    <p className="text-xl font-medium text-black ">
+                                    <p className="text-[18px] font-medium text-black ">
                                         +234 707 444 1664
                                     </p>
                                 </div>
@@ -85,17 +85,17 @@ export default function ContactPage() {
                                 <div className="flex items-center gap-4">
                                     <Mail
                                         className="text-[#C8A44D]"
-                                        size={26}
+                                        size={20}
                                     />
 
-                                    <p className=" text-sm md:text-[20px] font-medium text-black">
+                                    <p className=" text-sm md:text-[18px] font-medium text-black">
                                         info@emahlensuites.com
                                     </p>
                                 </div>
 
                             </div>
 
-                            <h3 className="playfair text-[30px] font-bold mt-14 text-black">
+                            <h3 className="playfair text-[18px] font-bold mt-14 text-black">
                                 Follow Us
                             </h3>
 
@@ -108,7 +108,7 @@ export default function ContactPage() {
                                     aria-label="Instagram"
                                 >
                                     <FaInstagram
-                                        size={30}
+                                        size={20}
                                         className="hover:text-[#C8A44D] transition text-[#c335af]"
                                     />
                                 </a>
@@ -119,7 +119,7 @@ export default function ContactPage() {
                                     aria-label="Facebook"
                                 >
                                     <FaFacebookF
-                                        size={30}
+                                        size={20}
                                         className="hover:text-[#C8A44D] text-white bg-blue-900 transition"
                                     />
                                 </a>
@@ -131,7 +131,7 @@ export default function ContactPage() {
                                     aria-label="X (Twitter)"
                                 >
                                     <FaXTwitter
-                                        size={30}
+                                        size={20}
                                         className="hover:text-[#C8A44D] text-black transition"
                                     />
                                 </a>
@@ -187,7 +187,7 @@ export default function ContactPage() {
 
                                 <button
                                     type="submit"
-                                    className="w-full md:w-[300px] h-12 bg-[#C8A44D] rounded-lg text-white font-semibold mx-auto block"
+                                    className="w-full md:w-[200px] h-12 bg-[#C8A44D] rounded-lg text-white font-semibold mx-auto block"
                                 >
                                     Send Message
                                 </button>

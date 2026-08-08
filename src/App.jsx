@@ -9,7 +9,8 @@ import MediaPage from "./pages/MediaPage";
 import ContactPage from "./pages/ContactPage";
 import ScrollToTop from "./components/ScrollToTop";
 import CareerPage from "./pages/CareerPage";
-
+import CareerLogin from "./pages/CareerLogin";
+import CareerManagement from "./pages/CareerManagement";
 
 import "./App.css";
 
@@ -28,7 +29,8 @@ function App() {
           <Route path="/media" element={<MediaPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/careers" element={<CareerPage />} />
-
+          <Route path="/career-login" element={<CareerLogin />} />
+          <Route path="/career-management" element={<CareerManagement />} />
         </Route>
       </Routes>
     </BrowserRouter>

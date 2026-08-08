@@ -24,9 +24,9 @@ export default function Footer() {
                         <Link
                             to="/">
                             <img
-                                src="/logo.png"
+                                src="/logonew.jpg"
                                 alt="Emahlen Hotel"
-                                className="w-32 object-contain"
+                                className="w-26 object-contain"
                             />
                         </Link>
                     </div>

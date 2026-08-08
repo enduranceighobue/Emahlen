@@ -44,7 +44,7 @@ export default function Header() {
   <Link to="/">
     <div className="w-14 h-14 rounded-full overflow-hidden bg-black mx-5 flex items-center justify-center">
       <img
-        src="/logo.png"
+        src="/logonew.jpg"
         alt="Emahlen Logo"
         className="w-full h-full object-cover"
       />
